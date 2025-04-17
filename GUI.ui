@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Digital_Image_Process</class>
+ <widget class="QWidget" name="Digital_Image_Process">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1591</width>
+    <height>1187</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>823</width>
+    <height>436</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGraphicsView" name="inputImageLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>471</width>
+     <height>511</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="outputImageLabel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>80</y>
+     <width>491</width>
+     <height>511</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>610</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>load image</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="grayButton">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>120</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>gray</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addNoiseButton">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>260</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>add noise</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveButton">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>600</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>save image</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="binaryButton">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>120</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>binary</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="faceDetectButton">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>260</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>facedetect</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Original Image</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="erosionButton">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>400</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>erosion</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dilationButton">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>400</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>dilation</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>540</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openButton">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>540</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="edgeDetectionComboBox">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>730</y>
+     <width>221</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+text-align: center;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Canny</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sobel</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Prewitt</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Robert</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>680</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Edge detection:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>870</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>segmentation:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="segmentationComboBox">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>920</y>
+     <width>221</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Otsu's</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>K-means</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>GrabCut</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QGraphicsView" name="inputHistogram">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>740</y>
+     <width>471</width>
+     <height>421</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="outputHistogram">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>740</y>
+     <width>481</width>
+     <height>421</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>700</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Input histogram</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>700</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Output histogram</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>40</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Processed Image</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>80</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Operations</string>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>inputImageLabel</zorder>
+  <zorder>outputImageLabel</zorder>
+  <zorder>loadButton</zorder>
+  <zorder>grayButton</zorder>
+  <zorder>addNoiseButton</zorder>
+  <zorder>saveButton</zorder>
+  <zorder>binaryButton</zorder>
+  <zorder>faceDetectButton</zorder>
+  <zorder>label</zorder>
+  <zorder>erosionButton</zorder>
+  <zorder>dilationButton</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>openButton</zorder>
+  <zorder>label_4</zorder>
+  <zorder>edgeDetectionComboBox</zorder>
+  <zorder>label_5</zorder>
+  <zorder>segmentationComboBox</zorder>
+  <zorder>inputHistogram</zorder>
+  <zorder>outputHistogram</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
